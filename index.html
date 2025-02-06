@@ -32,11 +32,51 @@
                 </div>
                 <div class="about-col2">
                     <h1 class="about-me">About Me!</h1>
-                    <p>I’m Sivarama Krishnan, a second-year Electrical Engineering student with a passion for technology, problem-solving, and innovation. As a budding software engineer, I enjoy applying my technical knowledge to develop creative solutions. I’ve participated in several hackathons, including one of India’s top hackathons, where I honed my skills in teamwork and rapid prototyping. Beyond academics, I love exploring emerging technologies and contributing to impactful projects. Let’s connect and build something amazing together!  </p>
+                    <p class="about-me-content">I’m Sivarama Krishnan, a second-year Electrical Engineering student with a passion for technology, problem-solving, and innovation. As a budding software engineer, I enjoy applying my technical knowledge to develop creative solutions. I’ve participated in several hackathons, including one of India’s top hackathons, where I honed my skills in teamwork and rapid prototyping. Beyond academics, I love exploring emerging technologies and contributing to impactful projects. Let’s connect and build something amazing together!  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Development</span><br>Design and Develop desktop application</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>CLI Application Development</span><br>Command Line Application Development with Rust</li>
+                            <li><span>Linux</span><br>Linux command line, shell scripting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Hackathons</span><br>Smart India Hackathon 2024 finalist</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Engineering</span><br>Pursuing Second Year</li>
+                         
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+   
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
     
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+
 </body>
 </html>
