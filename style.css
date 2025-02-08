@@ -167,6 +167,7 @@ nav ul li a:hover::after{
     font-weight: 400;
     border-radius: 8px;
     transition: background 0.5s, transform 0.5s;
+    backface-visibility: visible;
 }
 a{
     text-decoration: none;
@@ -184,6 +185,6 @@ a:hover{
     background-color: rgb(211, 58, 109);
     transform: translateY(-5px);
     transform: translateX(5px);
-    transform: translate3d(50px);
+    box-shadow: 5px 8px 150px #3f3e3e;
 }
 
