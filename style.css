@@ -98,8 +98,9 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 
 }
-.about-me{
-    font-size: 60px;
+.sub-title{
+    margin-bottom: 10px;
+    font-size: 50px;
     font-weight: 600;
     color: rgb(65, 194, 187);
 }
@@ -145,17 +146,12 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
-
 /* my resume*/
 #services{
     padding: 30px 0;;
 }
-.Resume-css{
-    font-size: 40px;
-    font-weight: 800;
-    color: #36adad;
-    margin-bottom: 10px;
+.sub-title{
+    padding: 10px 0;
 }
 .Download-Button{
     padding: 15px 15px;
@@ -188,3 +184,8 @@ a:hover{
     box-shadow: 5px 8px 150px #3f3e3e;
 }
 
+/*portfolio*/
+#portfolio{
+    padding: 50px 0;
+    
+}
